@@ -1,23 +1,27 @@
-package com.bsit.javaTraining.Array;
+package com.finezoom.javatraining.Array;
 
+/**
+ * This program is used to find index position of elements.
+ *
+ */
 public class IndexOfElements
-  {
-     
+{
+
 	public static void main(String[] args)
-	  {
-		int index=0;
-		
-		int i,number[]={3,4,5,6,7,89};
-		
-		
-		for(i=0;i<number.length;i++)
+	{
+		int index = 0;
+
+		int position, number[] =
+		{ 3, 4, 5, 6, 7, 5, 5, 6, 2, 5, 89 };
+
+		for (position = 0; position < number.length; position++)
 		{
-		  if(number[i]==89)
-		   {
-		
-			  index=i;
-		   }
+			if (number[position] == 2)
+			{
+
+				index = position;
+			}
 		}
-		System.out.println("print the index of elements: "+index);
-	  }
-  }
+		System.out.println("print the index of elements: " + index);
+	}
+}
