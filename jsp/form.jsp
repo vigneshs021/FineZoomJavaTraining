@@ -10,6 +10,8 @@
 <body>
 <form>
 <br>
+<center><h1>LogIn Form</h1>
+</center>
 Name
 <input type="text" name="first_name">
 <br>
@@ -21,5 +23,7 @@ EmailId
 
 <input type="submit" name="submit">
 </form>
+
+<a href="Content.html">Home</a>
 </body>
 </html>

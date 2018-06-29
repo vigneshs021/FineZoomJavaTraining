@@ -4,15 +4,32 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-<title>Numbers</title>
+<title>Insert title here</title>
 </head>
 <body>
-<h1>Print the Numbers</h1>
+<center>
+<h1><u>SumOfDigits</u></h1>
 <%
-for(int i=0;i<=100;i++){ %>
-<h1><%= i %></h1>
-<% }
+int i,j = 0;
 %>
-<a href="Content.html">Home</a>
+
+	<% 
+	int m = 552624346;
+%>
+		
+    <%
+		while (m > 0)
+		{
+			i = m % 10;
+			m = m / 10;
+			j = j + i;
+			%>
+<%
+		}
+    %>
+<h1>The sum of Value Is:<%=j%></h1>
+		<a href="Content.html">Home</a>
+		
+</center>
 </body>
 </html>

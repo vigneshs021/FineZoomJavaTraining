@@ -14,8 +14,15 @@
 <title>database</title>
 </head>
 <body>
-<table>
 
+<%
+String id = request.getParameter("id"); 
+String name = request.getParameter("name"); 
+String age = request.getParameter("age"); 
+String mark = request.getParameter("mark"); 
+           
+%>
+<table>
 <tr>
 
 <th>
@@ -31,18 +38,6 @@
 <input type="text" value="Mark">
 </th>
 
-</tr>
-
-</table>
-<%
-String id = request.getParameter("id"); 
-String name = request.getParameter("name"); 
-String age = request.getParameter("age"); 
-String mark = request.getParameter("mark"); 
-           
-%>
-
-
 <%
 		Class.forName("com.mysql.jdbc.Driver");
 		Connection conect = DriverManager.getConnection(
@@ -53,22 +48,28 @@ String mark = request.getParameter("mark");
 		ResultSet rs = st.executeQuery("select * from studentdetails");
 		while (rs.next()) {
 	%>
+
+
+<tr>
 	
-	
-	
-	<tr>
-	<br>
 	 <td><%=rs.getString(1)%></td>
      <td><%=rs.getString(2)%></td> 
    <td><%=rs.getString(3)%></td>
 	 <td><%=rs.getString(4)%></td> 
-	<br>
+	
 	</tr>
+</tr>
+
+	
 	
 	 
 
 	<%
 		}
 	%>
+	<a href="Content.html">Home</a>
+	
+</table>
+
 </body>
 </html>
