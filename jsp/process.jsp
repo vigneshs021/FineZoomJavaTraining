@@ -14,7 +14,7 @@ Class.forName("com.mysql.jdbc.Driver");
 Connection conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/learning", "vignesh", "vignesh");
 Statement st=conn.createStatement();
 
-int i=st.executeUpdate("insert into student(FirstName,LastName,city,email)values('"+first_name+"','"+last_name+"','"+city_name+"','"+email+"')");
+int i =st.executeUpdate("insert into student(FirstName,LastName,city,email)values('"+first_name+"','"+last_name+"','"+city_name+"','"+email+"')");
 out.println("Data is successfully inserted!");
 }
 catch(Exception e)

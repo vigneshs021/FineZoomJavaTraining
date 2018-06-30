@@ -4,16 +4,33 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-<title>Numbers</title>
+<title>Insert title here</title>
 </head>
 <body>
-<h1>Print the Numbers</h1>
-<%
-for(int i=0;i<=100;i++){ %>
-<h1><%= i %></h1>
-<% }
-%>
-<a href="Content.html">Home</a>
+<center>
 
+<%
+int i,j = 0;
+%>
+
+<%	String v = request.getParameter("m"); 
+ int m=Integer.parseInt(v);
+	
+%>
+		
+    <%
+		while (m > 0)
+		{
+			i = m % 10;
+			m = m / 10;
+			j = j + i;
+			%>
+<%
+		}
+    %>
+<h1>The sum of Value Is:<%=j%></h1>
+		<a href="Content.html">Home</a>
+		
+</center>
 </body>
 </html>

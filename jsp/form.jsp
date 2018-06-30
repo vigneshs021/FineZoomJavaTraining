@@ -21,7 +21,7 @@ EmailId
 <br>
 <br>
 
-<input type="submit" name="submit">
+  <input type="submit" value="submit">
 </form>
 
 <a href="Content.html">Home</a>

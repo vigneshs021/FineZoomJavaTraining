@@ -2,29 +2,8 @@
 <html>
 <head>
 <meta charset="ISO-8859-1">
-<title>Insert title here</title>
-<script>
+<title>Insert details</title>
 
-function validateForm()
-{
-	 alert("I am an alert box!");
-
-if(document.forms[0].first_name == "") {
-alert("Please enter a valid first_name");
-alert("I am an alert box!");
-return false;
-
-}
-if(document.forms[0].last_name == "")
-{
-alert("Please enter a valid last_name");
-return false;
-}
-}
-
-}
-
-</script>
 </head>
 <body>
 <center>
@@ -33,18 +12,18 @@ return false;
 
 <form method="post" action="process.jsp" >
 First name:<br>
-<input type="text" name="first_name" required>
+<input type="text" name="first_name"required>
 <br>
 Last name:<br>
-<input type="text" name="last_name" required>
+<input type="text" name="last_name"required>
 <br>
 City:<br>
-<input type="text" name="city_name"required>
+<input type="text" name="city_name">
 <br>
 Email:<br>
 <input type="email" name="email"required>
 <br><br>
-<input type="submit" value="submit"required>
+<input type="submit" value="submit">
 </form>
 <a href="Content.html">Home</a>
 </center>

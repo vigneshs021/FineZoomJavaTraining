@@ -14,6 +14,9 @@
 <title>database</title>
 </head>
 <body>
+<center>
+<h1> StudentDetails</h1>
+</center>
 
 <%
 String id = request.getParameter("id"); 
@@ -22,7 +25,8 @@ String age = request.getParameter("age");
 String mark = request.getParameter("mark"); 
            
 %>
-<table>
+
+<table border ="1"width = "100%">
 <tr>
 
 <th>
@@ -49,7 +53,6 @@ String mark = request.getParameter("mark");
 		while (rs.next()) {
 	%>
 
-
 <tr>
 	
 	 <td><%=rs.getString(1)%></td>
@@ -59,17 +62,13 @@ String mark = request.getParameter("mark");
 	
 	</tr>
 </tr>
-
-	
-	
-	 
-
+		 
 	<%
 		}
 	%>
-	<a href="Content.html">Home</a>
+	
 	
 </table>
-
+<a href="Content.html">Home</a>
 </body>
 </html>
